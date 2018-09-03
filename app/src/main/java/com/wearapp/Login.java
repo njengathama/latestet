@@ -21,7 +21,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wearapp.preferences.PrefManager;
+import com.wearapp.PrefManager;
 
 public class Login extends AppCompatActivity {
 
@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
         prefManager= new PrefManager(this);
         if (prefManager.isFirstTimeLaunch()) {
             prefManager.setFirstTimeLaunch(false);
-            startActivity(new Intent(getApplicationContext(), Welcome1.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
 

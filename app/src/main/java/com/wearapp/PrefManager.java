@@ -1,11 +1,8 @@
-package com.wearapp.preferences;
+package com.wearapp;
+
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-/**
- * Created by root on 1/17/18.
- */
 
 public class PrefManager {
     SharedPreferences pref;
@@ -16,7 +13,7 @@ public class PrefManager {
     int PRIVATE_MODE = 0;
 
     // Shared preferences file name
-    private static final String PREF_NAME = "DREAM";
+    private static final String PREF_NAME = "welcome";
 
     private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 
@@ -34,4 +31,5 @@ public class PrefManager {
     public boolean isFirstTimeLaunch() {
         return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
+
 }

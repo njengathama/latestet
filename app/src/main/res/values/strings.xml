@@ -20,5 +20,9 @@
     <string name="actis"><u>Real-Time: IRC Support</u></string>
     <string name="jkkjk">Get Help from Others</string>
     <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="next">Next</string>
+
 
 </resources>
